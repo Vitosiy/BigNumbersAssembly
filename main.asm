@@ -1,9 +1,13 @@
-﻿.model flat, stdcall
+.model flat, stdcall
 option casemap:none
+
 
 includelib msvcrtd
 includelib oldnames
 includelib legacy_stdio_definitions.lib
+
+include c:\masm32\include\user32.inc
+include c:\masm32\include\msvcrt.inc
 
 printf proto c :dword, :vararg
 malloc proto c :dword
